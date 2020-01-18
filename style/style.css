@@ -1,0 +1,461 @@
+body{
+    margin: 0;
+    padding: 0;
+    height:100vh;
+    background-color: #f4f5f7;
+    font-family: 'Indie Flower', cursive;
+    /* overflow-x: hidden; */
+    /* font-size:0.625; */
+
+}
+.start_wrap{
+    /* border:1px solid yellow; */
+    display:flex;
+    width:100vw;
+    justify-content: center;
+    overflow:hidden;
+}
+.wrap_content{
+    width:100%;
+    max-width:1600px;
+    border:1px solid red;
+    background-color: #f4f5f7;
+    z-index:3;
+}
+/* ---------------------------------------------------------------Navigator with few meals-------------------------------------------------------------------- */
+
+.wrap_header{
+    
+    display:flex;
+    flex-wrap:wrap;
+
+}
+.navigator{
+    z-index:2;
+    min-width:100%;
+}
+.navigator .button{
+    float:right;
+    margin-top:50px;
+}
+.button{
+    padding:5px;
+    display:flex;
+    min-width:120px;
+    min-height:45px;
+    border-radius:10px;
+    transition: all 0.3s;
+    background-color: #6ece0f;
+}
+.button p{
+    margin: auto;
+    text-align: center; 
+    font-size:1.8rem;
+    color:#fff;
+    transition:all 0.3s;
+}
+.button:hover p{
+    /* border-left:1px solid #fff; */
+    font-size:1.9rem;
+}
+.button:hover{
+    padding-left:10px;
+    padding-right:10px;
+    cursor:pointer;
+}
+.content_header{
+    display:flex;
+    justify-content: center;
+    min-width:100%;
+}
+.text_header{
+    z-index:1;
+    width:32%;
+    min-height:500px;
+}
+.text_header .button{
+    float:left;
+    padding-left:25px;
+    padding-right: 25px;
+}
+.wrap_text_header p:nth-child(1){
+    font-size:3rem;
+}
+.wrap_text_header p:nth-child(2){
+    font-size:1rem;
+}
+.wrap_text_header p span{
+    color:#5fb709;
+}
+
+.photo_header{
+    width:65%;
+    height:500px;
+}
+.meal_photo{
+    position:absolute;
+    z-index: 1;
+    margin-top:-110px;
+    margin-left:105px;
+    width:1081px;
+    height:720px;
+    background-image: url(img/meal.png);
+}
+.green_photo{
+    z-index:-1;
+    margin-top:200px;
+    width:90px;
+    height:120px;
+    background-image: url(img/green.png);
+}
+.onion_photo{
+    z-index:-1;
+    margin-left:-100px;
+    margin-top:-50px;
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    background-image: url(img/onion.png);
+    box-shadow: -5px 5px 50px #d0d0d1;
+}
+/* ---------------------------------------------------------------End Navigator with few meals-------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------First section with burger-------------------------------------------------------------------- */
+.wrap_section_white_first{
+    margin-left:-300px;
+    padding-left: 300px;
+    z-index: -1;
+    width:100vw;
+    max-width:1920px;
+    background-color: white;
+    min-height:750px;
+    /* border:5px solid red; */
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+    display:flex;
+}
+.burger_content{
+    /* background-color: red; */
+    width:33.3%;
+    height:100%;
+}
+.burger_photo{
+    margin-top:150px;
+    width:530px;
+    height:541px;
+    background-image: url(img/burger.png);
+}
+.text_section_first_content{
+    /* background-color: green; */
+    width:66.6%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.wrap_text_first{
+    width:100%;
+    /* background-color: #fff; */
+    height:30%;
+}
+.little_green{
+    margin-top:100px;
+    margin-left:600px;
+    width:134px;
+    height:117px;
+    background-image: url(img/littleGreen5.png);
+}
+.wrap_text_second{
+    width:100%;
+    /* background-color: #000; */
+    height:70%;
+}
+.wrap_one_half p{
+    margin-left:75px;
+    font-size:4rem;
+    color:#303030;
+}
+.wrap_one_half p span{
+    color:#5fb709;
+}
+.wrap_two_half{
+    margin-left:75px;
+}
+.wrap_two_half input{
+    outline:none;
+    color:#9b9a9a;
+    padding:5px;
+    padding-left:15px;
+    border-radius:10px;
+    width:150px;
+    height:30px;
+    border:1px solid #9b9a9a;
+    float:left;
+    min-height:45px;
+    min-width:300px;
+    font-size:1rem;
+}
+.wrap_two_half .button{
+    max-width:150px;
+}
+/* ---------------------------------------------------------------End first section with burger-------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------Second second with phone-------------------------------------------------------------------- */
+
+.wrap_section_nobgc_first{
+    width:100%;
+    height:1100px;
+    /* border:1px solid red; */
+    display:flex;
+    margin-bottom: 150px;
+}
+.wrap_text_phone{
+    display:flex;
+    flex-wrap:wrap;
+    width:50%;
+    /* border:2px solid red; */
+}
+.wave{
+    padding-left:250px;
+    /* border:1px solid green; */
+    color:#f4f5f7;
+    font-size:2rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #5fb709;
+    width:100%;
+
+}
+.wave p{
+    padding: 0;
+    margin: 0;
+}
+.text_second_section{
+    padding-left:25px;
+    padding-bottom:35px;
+    width:100%;
+    /* border:1px solid green; */
+}
+.text_second_section .button{
+    max-width:200px;
+}
+.wrap_text_second_section p:nth-child(1){
+    font-size:3rem;
+}
+.wrap_text_second_section span{
+    color:#5fb709;
+}
+.wrap_for_cornichons{
+    display:flex;
+    width:100%;
+    /* border:1px solid red; */
+}
+.cornishon1{
+    width:160px;
+    height:195px;
+    background-image: url(img/cornishon22.png);
+    margin-top:225px;
+    margin-left:-120px;
+}
+.cornishon2{
+    width:190px;
+    height:180px;
+    background-image: url(img/cornishon12.png);
+    margin-left:100px;
+    margin-top:150px;
+}
+.wrap_img_phone{
+    width:50%;
+    height:100%;
+    /* background-color: red; */
+    display:flex;
+
+}
+.wrap_for_phone{
+    width:70%;
+    height:100%;
+    /* background-color: #fff; */
+    padding-top:75px;
+}
+.phone_second_section{
+    width:400px;
+    height:740px;
+    background-image: url(img/phone.png);
+    border:1px solid red;
+    /* display:flex; */
+    padding-top:33px;
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.phone_second_section_inside{
+    width:80%;
+    height:95%;
+    border:2px solid yellow;
+    border-radius:35px;
+}
+.wrap_for_phone_inside{
+    width:100%;
+    font-family: 'Open Sans', sans-serif;
+    /* height:35px; */
+    /* background-color: red; */
+    /* opacity:0.5; */
+    /* border:1px solid black; */
+}
+.__nav{
+    padding: 0;
+    margin: 0;
+    display:flex;
+    height:25px;
+    /* padding-top: 5px;
+    padding-left:50px; */
+    display:flex;
+    
+}
+.__nav p{
+    padding: 0;
+    font-size:1rem;
+    margin: 0;
+}
+.__nav i{
+    font-size:0.8rem
+}
+.part_of_nav{
+    /* border:1px solid red; */
+    padding-top:2px;
+    width:100%;
+    display:flex;
+}
+.part_of_nav:nth-child(1) i{
+    margin-top:5px;
+}
+.part_of_nav:nth-child(1) p{
+    margin-left:15px;
+}
+.part_of_nav:nth-child(2){
+    justify-content: flex-end;
+}
+.part_of_nav:nth-child(2) i{
+    margin-top:6px;
+    margin-right:13px;
+}
+.part_of_nav:nth-child(2) p{
+    margin-right:3px;
+}
+.wrap_for_egg{
+    margin-left:-75px;
+    width:370px;
+    height:350px;
+    background-image: url(img/egg.png);
+}
+.__name{
+    border:1px solid black;
+    height:150px;
+}
+.part_of_name{
+    width:100%;
+    /* background-color: red; */
+    /* border:1px solid black; */
+}
+.part_of_name:nth-child(1) p{
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size:3rem;
+}
+.part_of_name:nth-child(1) span{
+    color:#5fb709;
+    padding-left: 3px;
+}
+.part_of_name:nth-child(2) i{
+    /* float:left; */
+    padding: 3px;
+    padding-left:10px;
+    position:absolute;
+}
+.part_of_name:nth-child(2) p{
+    /* position:absolute; */
+    padding: 0;
+    margin: 0;
+    font-size:1rem;
+    color:#5b5b5b;
+    /* margin-left:auto; */
+    display:flex;
+    justify-content: center;
+}
+.part_of_name:nth-child(3) p{
+    padding: 0;
+    margin: 0;
+    padding: 5px;
+    padding-left: 10px;
+}
+.__content{
+    border:1px solid black;
+
+}
+.part_of_content{
+    width:100%;
+    height:230px;
+    background-color:green;
+    border:1px solid yellow;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.part_of_content:nth-child(2){
+    max-width:322px;
+}
+.wrap_max_content{
+    width:100%;
+    position:relative;
+    height:100%;
+    overflow-x:scroll;
+    border:1px solid red;
+    display:flex;
+    /* justify-content: space-around; */
+    padding-left: 10px;
+    align-items: center;
+}
+.someorder_content_max{
+    min-width:240px;
+    height:80%;
+    border:1px solid black;
+    margin-right: 20px;
+}
+.stop_content{
+    width:1px;
+    height:80%;
+    border:1px solid black;
+    opacity:0;
+}
+.someorder_content_focused{
+    /* position:absolute; */
+    margin-left:-200px;
+    width:350px;
+    background-image: url(img/phone_meal_1.jpg);
+    background-size: cover;
+}
+.description_of_order_content{
+    margin-top: 50%;
+    width:100%;
+    height:20%;
+    background-color: #fff;
+    display:flex;
+    justify-content: space-between;
+}
+.description_of_order_content p{
+    color:#5b5b5b;
+    font-weight:500;
+    font-size:0.8rem;
+    padding: 10px;
+    margin: 0;
+}
+.part_of_content:nth-child(2){
+    width:500px;
+}
+.__footer{
+    border:1px solid black;
+
+}
