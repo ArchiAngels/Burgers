@@ -48,3 +48,37 @@ window.addEventListener('keydown', (event)=>{
     k = event.keyCode;
     console.log(k,'\'CTRL\' is On');
 })
+
+
+
+let phoneTape = document.querySelector('.wrap_max_content');
+let point0,point1,key1,point3,tmp =0,tmp1 =0;
+phoneTape.addEventListener('mousemove', ()=>{
+    point1 = Number(event.clientX) -575;
+    if(key1 == 1){
+        if(point0 > point1){
+            console.log('Etot green idet v pravo -->');
+            point3 = tmp + (point0 -point1);
+            phoneTape.scrollLeft = point3;
+            console.log(phoneTape.scrollLeft,tmp);
+            
+        }
+        if(point1 > point0){
+            console.log('A seichas dolzhen v levo <--');
+            point3 = point0 -point1;
+            phoneTape.scrollLeft = point3 +tmp;
+            // point0 = point1;
+        }
+    }
+})
+phoneTape.addEventListener('mousedown', () =>{
+    point0 = Number(event.clientX) -575;
+    key1 =1;
+});
+phoneTape.addEventListener('mouseup', () =>{
+    // point1 = Number(event.clientX);
+    // console.log('mouseuped');
+    tmp = phoneTape.scrollLeft;
+    key1 =0;
+    
+});
